@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [[ $1 =~ [@] ]];
+then 
+echo "to jest adres mailowy"
+elif [[ $1 =~ [-] ]];
+then
+echo "to jest kod pocztowy"
+elif [[ $1 =~ [A-Za-z] ]];
+then
+echo "to jest imie"
+else 
+echo "blad"
+fi

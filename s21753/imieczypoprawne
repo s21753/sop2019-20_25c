@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $1 =~ [A-Z]+[a-z] ]];
+then 
+echo "imie jest poprawnie napisane"
+else 
+echo "imie nie jest poprawnie napisane"
+fi

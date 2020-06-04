@@ -1,0 +1,9 @@
+#!/bin/bash
+
+mamy=$(ls -1)
+
+
+for i in $mamy;
+do 
+	echo "patrzcie panstwo, oto plik: $i"
+done

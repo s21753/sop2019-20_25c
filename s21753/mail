@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [[ $1 =~ ["@"] ]];
+then
+echo "to jest adres email"
+else
+echo "to nie jest adres email"
+fi
