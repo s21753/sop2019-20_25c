@@ -1,0 +1,34 @@
+Instrukcja instalacji systemu operacyjnego Debian
+
+# System instalowa³em z trybem graficznym na maszynie wirtualnej, u¿y³em do tego celu programu VMware Workstation.
+
+1. System Debian mo¿na pobraæ za darmo ze strony www.debian.org
+2. Po uruchomieniu aplikacji VMware workstation wybieramy Plik, nowa maszyna wirtualna, korzystamy z ustawieñ zalecanych.
+3. Podajemy œcie¿kê do pobranego wczeœniej Debiana. Mo¿emy nadaæ nazwê maszynie wirtualnej oraz wybraæ na jakim dysku i katalogu ma siê znajdowaæ.
+4. Wyodrêbniamy z dysku twardego przestrzeñ dyskow¹ przeznaczon¹ dla maszyny wirtualnej. Mo¿emy przydzieliæ dowoln¹ iloœæ jak¹ mamy woln¹ na dysku,
+   natomiast minimalna iloœæ to 20GB.
+5. Zaznaczamy opcjê finish i uruchamiamy maszynê wirtualn¹ z systemem.
+6. Wybieramy opcjê graphic install.
+7. Wybieramy jêzyk angielski oraz kraj, nastêpnie jêzyk klawiatury angielski oraz przechodzimy dalej.
+8. Ustawiamy nazwê komputera (hostname), has³o dostêpu do systemu dla administratora (root password), nazwê u¿ytkownika oraz has³o u¿ytkownika.
+9. Przechodzimy do ustawiania partycji w systemie i wybieramy opcjê ustawienia rêcznego (manual).
+10. Klikamy na dostêpn¹ przestrzeñ dyskow¹ i tworzymy now¹ partycjê.
+11. Nastêpnie klikamy na powsta³ej partycji (free space), klikamy continue oraz tworzymy now¹ partycjê.
+12. Pierwsz¹ partycj¹ bêdzie partycja systemowa - root. Nadajemy jej wielkoœæ. Powinno to byæ optymalnie co najmniej 10GB.
+13. Klikamy dalej i wybieramy opcjê Primary, poniewa¿ tworzymy partycjê root. 
+14. W kolejnym kroku zobaczymy w jakim systemie plików bêdzie dzia³aæ partycja, pojawia siê Ext4 journaling file system
+    i w ten sposób to zostawiamy, poniewa¿ jest to wspó³czesny system stosowany w wiêkszoœci dystrybucji linuxa.
+15. Zmieniamy opcjê Bootable flag na ON, poniewa¿ z tej partycji ma siê bootowaæ system. Tê opcjê zmieniamy na ON, tylko
+    jeœli instalujemy w trybie legacy BIOS, a nie UEFI. Przechodzimy do kolejnego kroku.
+16. Kolejna partycja to Swap space. Analogicznie do poprzedniej partycji klikamy na free space i tworzymy now¹ partycjê.
+17. Rozmiar partycji Swap space jest zale¿ny od iloœci pamiêci ram dostêpnej w komputerze. Partycja ta powinna mieæ rozmiar
+    zbli¿ony do iloœi pamiêci ram w komputerze/maszynie wirtualnej. Mo¿emy przydzieliæ np. 8GB. Przechodzimy dalej i wybieramy opcjê "logical".
+18. Bootable flag zostawiamy na off, by³ on potrzebny tylko w partycji root. Wybieramy opcjê "use as", "continue" oraz
+    wybieramy opcjê swap area, czyli przydzielamy naszej partycji jej w³aœciw¹ funkcjê.
+19. Ostatni¹ partycj¹ bêdzie partycja home, czyli taka z której bêdziemy korzystaæ na co dzieñ i tam przechowywaæ pliki.
+20. Tej partycji mo¿emy przydzieliæ ca³e pozosta³e nieu¿yte miejsce na dysku, montujemy w miejscu /home.
+21. Po zakoñczonej pracy powinniœmy mieæ partycje ext4 / (root), swap, ext4 /home.
+22. W nastêpnym kroku instalator poinformuje nas, ¿e partycje nale¿y sformatowaæ, wybieramy tak i przechodzimy dalej.
+23. Instalator poprosi o wskazanie serwera do pobierania repozytoriów. W naszym przypadku
+    wybieramy kraj Polska oraz serwer ftp.task.gda.pl poniewa¿ jest pewniakiem. 
+24. System zostanie zainstalowany. 
