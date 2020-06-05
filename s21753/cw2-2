@@ -1,0 +1,9 @@
+X="Tekst 1"
+Y="tekst:$X"
+echo "$Y"
+Y='tekst:$X'
+echo "$Y"
+Y=tekst:$X
+echo "$Y"
+
+#apostrof jest silniejszy, przekazuje wszystkie znaki ktore sa wewnatrz niego, a cudzyslow przekazuje znaki ale interpretuje zmienne.

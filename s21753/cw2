@@ -1,0 +1,6 @@
+X=halo123
+echo $X
+bash 
+echo $X
+
+

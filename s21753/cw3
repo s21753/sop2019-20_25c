@@ -1,0 +1,9 @@
+#!/bin/bash
+
+echo $PATH #sciezka katalogu    
+echo $RANDOM #losowa liczba
+echo $PWD #sciezka katalogu w ktorym sie znajdujemy
+echo $PS1 #znak zachety
+echo $USER #nazwa uzytkownika
+echo $HOSTNAME #nazwa systemu
+echo $OSTYPE #typ systemu operacyjnego
